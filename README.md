@@ -60,7 +60,7 @@ If you setup your store with [middleware and enhancers](http://redux.js.org/docs
 ```
 > Note that when the extension is not installed, we’re using Redux compose here.
   
-To specify [extension’s options](https://github.com/zalmoxisus/redux-devtools-extension/blob/master/docs/API/Arguments.md), use it like so:
+To specify extension’s options, use it like so:
 ```js
 const composeEnhancers =
   typeof window === 'object' &&
@@ -76,9 +76,7 @@ const enhancer = composeEnhancers(
 const store = createStore(reducer, enhancer);
 ```
 
-> [See the post for more details](https://medium.com/@zalmoxis/improve-your-development-workflow-with-redux-devtools-extension-f0379227ff83).
-
-### 1.3 Use `redux-devtools-extension` package from npm
+### 1.3 Use `redux-devtools-extension`
 
 To use like so:
 ```js
