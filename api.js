@@ -1,5 +1,5 @@
 const electron = require('electron')
-const { compose } = require('redux');
+const { compose } = require('redux')
 
 // devtools-extension install
 exports.install = (autoReload) => {
@@ -13,7 +13,7 @@ exports.install = (autoReload) => {
   const path = electron.remote.BrowserWindow.addDevToolsExtension(`${__dirname}/build`)
   console.log(`Installing Redux DevTools from ${__dirname}/build`)
 
-  if (autoReload === true) electron.remote.getCurrentWindow().reload();
+  if (autoReload === true) electron.remote.getCurrentWindow().reload()
 
   return path
 }
@@ -39,3 +39,5 @@ exports.devToolsEnhancer = (
   typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION__ ?
     window.__REDUX_DEVTOOLS_EXTENSION__ : function() { return function(noop) { return noop } }
 )
+
+exports.path = __dirname
