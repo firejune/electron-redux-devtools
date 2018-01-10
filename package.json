@@ -1,6 +1,6 @@
 {
   "name": "electron-redux-devtools",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Redux DevTools Extension for Electron",
   "main": "./api.js",
   "repository": {
